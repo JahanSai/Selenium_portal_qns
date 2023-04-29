@@ -1,0 +1,49 @@
+{
+  "id": "cfc735f6-ae8a-49c1-9ba0-7d5fd1230122",
+  "version": "2.0",
+  "name": "Task5",
+  "url": "https://demo.opencart.com/",
+  "tests": [{
+    "id": "eebb817c-bab3-4a24-b975-2850ce5c112a",
+    "name": "Task5",
+    "commands": [{
+      "id": "76ed37e4-4d57-46e6-87d8-704cf83b741d",
+      "comment": "",
+      "command": "open",
+      "target": "https://demo.opencart.com/index.php?route=checkout/voucher&language=en-gb",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b620be0f-418c-4eb4-85b3-4413739adb3a",
+      "comment": "",
+      "command": "assertValue",
+      "target": "xpath=//input[@id='input-amount']",
+      "targets": [],
+      "value": "1"
+    }, {
+      "id": "38a7008d-7b56-4374-bca8-dedff56144af",
+      "comment": "",
+      "command": "click",
+      "target": "name=agree",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "58b06271-2bff-4c9e-adcc-81c1ee8990ae",
+      "comment": "",
+      "command": "verifyChecked",
+      "target": "name=agree",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "e8a4b89b-3a22-410d-88a3-b90ceea16756",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["eebb817c-bab3-4a24-b975-2850ce5c112a"]
+  }],
+  "urls": ["https://demo.opencart.com/"],
+  "plugins": []
+}

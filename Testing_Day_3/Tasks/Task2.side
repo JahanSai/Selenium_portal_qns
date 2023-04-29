@@ -1,0 +1,92 @@
+{
+  "id": "cfc735f6-ae8a-49c1-9ba0-7d5fd1230122",
+  "version": "2.0",
+  "name": "Task2",
+  "url": "https://demo.opencart.com",
+  "tests": [{
+    "id": "eebb817c-bab3-4a24-b975-2850ce5c112a",
+    "name": "Task2",
+    "commands": [{
+      "id": "d34deb44-dd51-43b1-ac0f-68df47068502",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "997d0c85-8623-4ce4-9b73-e5f1948f8eb4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "825x669",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "efba97fa-2490-4dc0-a793-72fd72a82975",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-bars",
+      "targets": [
+        ["css=.fa-bars", "css:finder"],
+        ["xpath=//nav[@id='menu']/button/i", "xpath:idRelative"],
+        ["xpath=//nav/button/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e3bc2080-b844-439b-a593-36f93161b442",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Phones & PDAs",
+      "targets": [
+        ["linkText=Phones & PDAs", "linkText"],
+        ["css=.nav-item:nth-child(6) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Phones & PDAs')]", "xpath:link"],
+        ["xpath=//div[@id='narbar-menu']/ul/li[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://demo.opencart.com/index.php?route=product/category&language=en-gb&path=24')]", "xpath:href"],
+        ["xpath=//li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Phones & PDAs')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6a6e39a9-9b2b-4750-ab7d-1de8186c6533",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col:nth-child(1) .img-fluid",
+      "targets": [
+        ["css=.col:nth-child(1) .img-fluid", "css:finder"],
+        ["xpath=//img[@alt='HTC Touch HD']", "xpath:img"],
+        ["xpath=//div[@id='product-list']/div/form/div/div/a/img", "xpath:idRelative"],
+        ["xpath=//form/div/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8f5560c4-1cc1-4b46-b374-78bb6ceae8ed",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//div[@id='content']/div/div[2]/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'HTC Touch HD')]", "xpath:innerText"]
+      ],
+      "value": "name"
+    }, {
+      "id": "de845325-0a0e-44ed-83a6-432a292a85bd",
+      "comment": "",
+      "command": "echo",
+      "target": "${name}",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "e8a4b89b-3a22-410d-88a3-b90ceea16756",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["eebb817c-bab3-4a24-b975-2850ce5c112a"]
+  }],
+  "urls": ["https://demo.opencart.com/"],
+  "plugins": []
+}
